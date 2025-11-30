@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaraCafe – Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/848830b72b.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color:#faf7f2;">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg p-1 fixed-top navbar-dark nav-scrolled-text-shadow" id="navToggler">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">TaraCafe</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-uppercase fs-4">
+        <li class="nav-item m-auto p-3"><a class="nav-link bawah p-0" href="index.html#home">Home</a></li>
+        <li class="nav-item m-auto p-3"><a class="nav-link bawah p-0" href="index.html#menu">Menu</a></li>
+        <li class="nav-item m-auto p-3"><a class="nav-link bawah p-0" href="index.html#gallery">Gallery</a></li>
+        <li class="nav-item m-auto p-3"><a class="nav-link bawah p-0" href="index.html#reviews">Reviews</a></li>
+
+        <!-- ACTIVE SHOP -->
+        <li class="nav-item m-auto p-3">
+          <a class="nav-link bawah p-0 active" href="shop.html" style="color:#9b4c25;">Shop</a>
+        </li>
+
+        <li class="nav-item m-auto p-3"><a class="nav-link bawah p-0" href="admin/admin-login.html">Admin</a></li>
+        <li class="nav-item m-auto p-3 pe-lg-0"><a class="nav-link bawah p-0" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- END NAV -->
+
+<!-- PAGE HEADER -->
+<div class="container text-center" style="padding-top:120px;">
+  <h1 class="fw-bold" style="color:#3a2c27;">Shop Our Coffee</h1>
+  <p class="text-secondary">Order freshly brewed coffee and snacks from TaraCafe.</p>
+</div>
+
+<!-- SHOP GRID -->
+<div class="container py-5">
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- Cappuccino -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow border-0" style="border-radius:18px;">
+        <img src="img/Cappuccino.jpg" class="card-img-top"
+             style="height:240px; border-top-left-radius:18px; border-top-right-radius:18px; object-fit:cover;">
+        <div class="card-body">
+          <h3 class="fw-bold">Cappuccino</h3>
+          <p class="text-secondary">Rich espresso with steamed milk.</p>
+          <div class="d-flex justify-content-between">
+            <span class="fw-bold fs-5">₹150</span>
+            <a href="payment.html?item=Cappuccino&price=150" 
+               class="btn px-4 py-2"
+               style="background:#9b4c25; color:#fff; border-radius:30px;">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cold Brew -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow border-0" style="border-radius:18px;">
+        <img src="img/Cold Brew.jpg" class="card-img-top"
+             style="height:240px; border-top-left-radius:18px; border-top-right-radius:18px; object-fit:cover;">
+        <div class="card-body">
+          <h3 class="fw-bold">Cold Brew</h3>
+          <p class="text-secondary">Smooth, slow-brewed cold coffee.</p>
+          <div class="d-flex justify-content-between">
+            <span class="fw-bold fs-5">₹180</span>
+            <a href="payment.html?item=Cold Brew&price=180" 
+               class="btn px-4 py-2"
+               style="background:#9b4c25; color:#fff; border-radius:30px;">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mocha Latte -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow border-0" style="border-radius:18px;">
+        <img src="img/Mocha Latte.jpg" class="card-img-top"
+             style="height:240px; border-top-left-radius:18px; border-top-right-radius:18px; object-fit:cover;">
+        <div class="card-body">
+          <h3 class="fw-bold">Mocha Latte</h3>
+          <p class="text-secondary">Espresso blended with chocolate.</p>
+          <div class="d-flex justify-content-between">
+            <span class="fw-bold fs-5">₹200</span>
+            <a href="payment.html?item=Mocha Latte&price=200" 
+               class="btn px-4 py-2"
+               style="background:#9b4c25; color:#fff; border-radius:30px;">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Blueberry Cheesecake -->
+<div class="col-lg-4 col-md-6">
+  <div class="card shadow border-0" style="border-radius:18px;">
+    <img src="img/Blueberry Cheesecake.jpg" class="card-img-top"
+         style="height:240px; border-top-left-radius:18px; border-top-right-radius:18px; object-fit:cover;">
+    <div class="card-body">
+      <h3 class="fw-bold">Blueberry Cheesecake</h3>
+      <p class="text-secondary">Creamy dessert topped with fresh blueberry sauce.</p>
+
+      <div class="d-flex justify-content-between">
+        <span class="fw-bold fs-5">₹210</span>
+        <a href="payment.html?item=Blueberry Cheesecake&price=210"
+           class="btn px-4 py-2"
+           style="background:#9b4c25; color:#fff; border-radius:30px;">
+           Buy Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<section id="footer"></section>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
